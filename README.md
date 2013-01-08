@@ -18,9 +18,9 @@ This category provide 3 new methodes on the current devices:
 
 This category works with known patterns.
 For know it handle basics English and French default namming such as:
--"John Doe's iPhone"
--"iPhone of John Doe"
--"iPhone de John Doe"
+- "John Doe's iPhone"
+- "iPhone of John Doe"
+- "iPhone de John Doe"
 
 If you know other patterns from other langs, please contribute.
 
