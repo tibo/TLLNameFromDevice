@@ -18,6 +18,8 @@
 		11293EBC169C6D4C001E9171 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11293EBB169C6D4C001E9171 /* Default-568h@2x.png */; };
 		11293EBF169C6D4C001E9171 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11293EBE169C6D4C001E9171 /* ViewController.m */; };
 		11293EC2169C6D4C001E9171 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11293EC0169C6D4C001E9171 /* ViewController.xib */; };
+		11293ED0169C6DA3001E9171 /* UIDevice+NameFromDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11293ECF169C6DA3001E9171 /* UIDevice+NameFromDevice.m */; };
+		11DFC2A9169C903200C68E86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 11DFC2A8169C903200C68E86 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		11293EBD169C6D4C001E9171 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		11293EBE169C6D4C001E9171 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		11293EC1169C6D4C001E9171 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		11293ECE169C6DA3001E9171 /* UIDevice+NameFromDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NameFromDevice.h"; sourceTree = "<group>"; };
+		11293ECF169C6DA3001E9171 /* UIDevice+NameFromDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+NameFromDevice.m"; sourceTree = "<group>"; };
+		11DFC2A8169C903200C68E86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,8 @@
 		11293E96169C6D4C001E9171 = {
 			isa = PBXGroup;
 			children = (
+				11DFC2A8169C903200C68E86 /* README.md */,
+				11293ECC169C6D84001E9171 /* TLLNameFromDevice */,
 				11293EAB169C6D4C001E9171 /* Sample */,
 				11293EA4169C6D4C001E9171 /* Frameworks */,
 				11293EA2169C6D4C001E9171 /* Products */,
@@ -105,6 +112,15 @@
 				11293EBB169C6D4C001E9171 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11293ECC169C6D84001E9171 /* TLLNameFromDevice */ = {
+			isa = PBXGroup;
+			children = (
+				11293ECE169C6DA3001E9171 /* UIDevice+NameFromDevice.h */,
+				11293ECF169C6DA3001E9171 /* UIDevice+NameFromDevice.m */,
+			);
+			path = TLLNameFromDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +179,7 @@
 				11293EBA169C6D4C001E9171 /* Default@2x.png in Resources */,
 				11293EBC169C6D4C001E9171 /* Default-568h@2x.png in Resources */,
 				11293EC2169C6D4C001E9171 /* ViewController.xib in Resources */,
+				11DFC2A9169C903200C68E86 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +193,7 @@
 				11293EB2169C6D4C001E9171 /* main.m in Sources */,
 				11293EB6169C6D4C001E9171 /* AppDelegate.m in Sources */,
 				11293EBF169C6D4C001E9171 /* ViewController.m in Sources */,
+				11293ED0169C6DA3001E9171 /* UIDevice+NameFromDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +310,7 @@
 				11293EC7169C6D4C001E9171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

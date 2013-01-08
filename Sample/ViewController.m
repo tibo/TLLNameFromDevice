@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIDevice+NameFromDevice.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.helloFullName.text = [NSString stringWithFormat:@"Hello %@ !",[[UIDevice currentDevice] fullNameFromDevice]];
+    self.firstnameField.text = [[UIDevice currentDevice] firstName];
+    self.lastnameField.text = [[UIDevice currentDevice] lastName];
+    
 }
 
 - (void)didReceiveMemoryWarning
