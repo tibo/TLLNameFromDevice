@@ -17,14 +17,15 @@ This category provide 3 new methodes on the current devices:
 ## Localizations
 
 This category works with known patterns.
-For know it handle basics English and French default namming such as:
+For now it handle basics English and French default namming such as:
 - "John Doe's iPhone"
 - "iPhone of John Doe"
 - "iPhone de John Doe"
 
-If you know other patterns from other langs, please contribute.
+If you know other patterns from other languages, please contribute.
 
 If you contribute, please add a basic test case in the test target to make sure your pattern is working.
+(tests for the actuals patterns on the way, I'm still working on it)
 
 ## License
 
