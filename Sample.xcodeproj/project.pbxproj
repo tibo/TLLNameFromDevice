@@ -27,6 +27,8 @@
 		11DFC324169C92D200C68E86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11293EA7169C6D4C001E9171 /* Foundation.framework */; };
 		11DFC32A169C92D200C68E86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11DFC328169C92D200C68E86 /* InfoPlist.strings */; };
 		11DFC336169C93C000C68E86 /* UIDevice_NameFromDevice_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DFC335169C93C000C68E86 /* UIDevice_NameFromDevice_Tests.m */; };
+		11DFC34E169DB85D00C68E86 /* UIDevice+UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DFC34D169DB85D00C68E86 /* UIDevice+UnitTests.m */; };
+		11DFC352169DBAA200C68E86 /* NSObject+SupersequentImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DFC351169DBAA200C68E86 /* NSObject+SupersequentImplementation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		11DFC32E169C92D200C68E86 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		11DFC334169C93C000C68E86 /* UIDevice_NameFromDevice_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDevice_NameFromDevice_Tests.h; sourceTree = "<group>"; };
 		11DFC335169C93C000C68E86 /* UIDevice_NameFromDevice_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDevice_NameFromDevice_Tests.m; sourceTree = "<group>"; };
+		11DFC34C169DB85D00C68E86 /* UIDevice+UnitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+UnitTests.h"; sourceTree = "<group>"; };
+		11DFC34D169DB85D00C68E86 /* UIDevice+UnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+UnitTests.m"; sourceTree = "<group>"; };
+		11DFC350169DBAA200C68E86 /* NSObject+SupersequentImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SupersequentImplementation.h"; sourceTree = "<group>"; };
+		11DFC351169DBAA200C68E86 /* NSObject+SupersequentImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SupersequentImplementation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,10 @@
 				11DFC326169C92D200C68E86 /* Supporting Files */,
 				11DFC334169C93C000C68E86 /* UIDevice_NameFromDevice_Tests.h */,
 				11DFC335169C93C000C68E86 /* UIDevice_NameFromDevice_Tests.m */,
+				11DFC34C169DB85D00C68E86 /* UIDevice+UnitTests.h */,
+				11DFC34D169DB85D00C68E86 /* UIDevice+UnitTests.m */,
+				11DFC350169DBAA200C68E86 /* NSObject+SupersequentImplementation.h */,
+				11DFC351169DBAA200C68E86 /* NSObject+SupersequentImplementation.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -351,6 +361,8 @@
 			files = (
 				11DFC336169C93C000C68E86 /* UIDevice_NameFromDevice_Tests.m in Sources */,
 				11398A37169CE82200E4FE36 /* UIDevice+NameFromDevice.m in Sources */,
+				11DFC34E169DB85D00C68E86 /* UIDevice+UnitTests.m in Sources */,
+				11DFC352169DBAA200C68E86 /* NSObject+SupersequentImplementation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
