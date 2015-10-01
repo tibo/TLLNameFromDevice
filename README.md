@@ -1,6 +1,6 @@
 This is just a simple UIDevice category which make you able to guess the firstname and lastname of your user from the iPhone device name.
 
-This is absolutly not a certain solution, use it with awareness.
+This is absolutely not a certain solution, use it with awareness.
 
 ## Get started
 
