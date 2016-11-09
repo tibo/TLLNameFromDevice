@@ -71,19 +71,67 @@
     
     STAssertEqualObjects([self.mockedDevice name], [[UIDevice currentDevice] name], nil);
     STAssertEqualObjects([[UIDevice currentDevice] name], fakeiPhoneName, nil);
-//    STAssertEqualObjects([[UIDevice currentDevice] fullNameFromDevice], self.fullName, nil);
-//    STAssertEqualObjects([[UIDevice currentDevice] firstName], self.firstName, nil);
-//    STAssertEqualObjects([[UIDevice currentDevice] lastName], self.lastName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] fullNameFromDevice], self.fullName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] firstName], self.firstName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] lastName], self.lastName, nil);
 }
 
 -(void)test_OtherENName_shouldReturnValues
 {
-    
+    NSString *fakeiPhoneName = [NSString stringWithFormat:@"%@’s iPhone", self.fullName];
+    [[[self.mockedDevice stub] andReturn:fakeiPhoneName] name];
+
+    STAssertEqualObjects([self.mockedDevice name], [[UIDevice currentDevice] name], nil);
+    STAssertEqualObjects([[UIDevice currentDevice] name], fakeiPhoneName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] fullNameFromDevice], self.fullName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] firstName], self.firstName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] lastName], self.lastName, nil);
+}
+
+-(void)test_FirstNameENName_shouldReturnValues
+{
+    NSString *fakeiPhoneName = [NSString stringWithFormat:@"%@’s iPhone", self.firstname];
+    [[[self.mockedDevice stub] andReturn:fakeiPhoneName] name];
+
+    STAssertEqualObjects([self.mockedDevice name], [[UIDevice currentDevice] name], nil);
+    STAssertEqualObjects([[UIDevice currentDevice] name], fakeiPhoneName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] firstName], self.firstName, nil);
+}
+
+-(void)test_OfENName_shouldReturnValues
+{
+    NSString *fakeiPhoneName = [NSString stringWithFormat:@"iPhone of %@", self.firstname];
+    [[[self.mockedDevice stub] andReturn:fakeiPhoneName] name];
+
+    STAssertEqualObjects([self.mockedDevice name], [[UIDevice currentDevice] name], nil);
+    STAssertEqualObjects([[UIDevice currentDevice] name], fakeiPhoneName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] fullNameFromDevice], self.fullName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] firstName], self.firstName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] lastName], self.lastName, nil);
 }
 
 -(void)test_BasicFRName_shouldReturnValues
 {
-    
+    NSString *fakeiPhoneName = [NSString stringWithFormat:@"iPhone de %@", self.fullName];
+    [[[self.mockedDevice stub] andReturn:fakeiPhoneName] name];
+
+    STAssertEqualObjects([self.mockedDevice name], [[UIDevice currentDevice] name], nil);
+    STAssertEqualObjects([[UIDevice currentDevice] name], fakeiPhoneName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] fullNameFromDevice], self.fullName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] firstName], self.firstName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] lastName], self.lastName, nil);
+}
+
+-(void)test_BasicITName_shouldReturnValues
+{
+    NSString *fakeiPhoneName = [NSString stringWithFormat:@"iPhone di %@", self.fullName];
+    [[[self.mockedDevice stub] andReturn:fakeiPhoneName] name];
+
+    STAssertEqualObjects([self.mockedDevice name], [[UIDevice currentDevice] name], nil);
+    STAssertEqualObjects([[UIDevice currentDevice] name], fakeiPhoneName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] fullNameFromDevice], self.fullName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] firstName], self.firstName, nil);
+    STAssertEqualObjects([[UIDevice currentDevice] lastName], self.lastName, nil);
 }
 
 @end
