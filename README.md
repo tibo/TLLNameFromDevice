@@ -1,12 +1,12 @@
-This is just a simple UIDevice category which make you able to guess the firstname and lastname of your user from the iPhone device name.
+This is a simple UIDevice category that will potentially enable you able to guess the first and last name of a user from the iPhone's device name.
 
-This is absolutely not a certain solution, use it with awareness.
+This is absolutely not a fool-proof solution, use it with caution.
 
 ## Get started
 
 Just drag the UIDevice+NameFromDevice.h/m files and include it where you need it.
 
-This category provide 3 new methodes on the current devices:
+This category provides the following methods that work with current devices (iPhone, iPad, iPod):
 
 ``` objective-c
 -(NSString *)fullNameFromDevice;
@@ -16,11 +16,11 @@ This category provide 3 new methodes on the current devices:
 
 ## Localizations
 
-This category works with known patterns.
-For now it handle basics English and French default namming such as:
+This category works with known patterns. For now it handles basic English, French, and Italian default naming such as:
 - "John Doe's iPhone"
 - "iPhone of John Doe"
 - "iPhone de John Doe"
+- "iPhone di John Doe"
 
 If you know other patterns from other languages, please contribute.
 

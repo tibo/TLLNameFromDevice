@@ -22,11 +22,13 @@ static NSString *_name = nil;
         return nil;
     
     
-    NSArray *patternArray = [NSArray arrayWithObjects:@"%@ ", @" %@", //basic without auxiliary
-                                                        @"'s %@", // en
-                                                        @"%@ of ", // en
-                                                         @"%@ de ", // fr
-                             nil];
+    NSArray *patternArray = @[@"%@ ", @" %@", // basic (without auxiliary)
+                              @"’s %@", // en (fancy apostrophe)
+                              @"'s %@", // en
+                              @"%@ of ", // en
+                              @"%@ de ", // fr
+                              @"%@ di ", // it
+                             ];
     
     
     for (NSString *pattern in patternArray)
